@@ -66,7 +66,9 @@ const ChatPage = () => {
                                 </div>
                                     <div key={message.id} className={`message-${message.sender}`}>
                                         <div className="message-content">
-                                            {message.text}
+                                            {(message.text)}
+
+
 
                                         </div>
                                     </div><div className="space"> </div></>
@@ -82,13 +84,19 @@ const ChatPage = () => {
                 <div className="input-container">
                     <div className="input-contents">
                         <input
-                            type="text"
+                            type="textarea"
+
                             className='chat-input'
                             value={input}
                             onChange={(e) => setInput(e.target.value)}
                             onKeyDown={(e) => e.key === 'Enter' && sendMessage()}
                             required placeholder="チャットを入力"
                         />
+                        {/* <textarea name="postContent" rows={4} cols={40} className='chat-input'
+                            value={input}
+                            onChange={(e) => setInput(e.target.value)}
+                            onKeyDown={(e) => e.key === 'Enter' && sendMessage()}
+                            required placeholder="チャットを入力" /> */}
                         <button className='chat-submit' onClick={sendMessage}>👌</button>
                     </div>
                     <div className="bottom"></div>
