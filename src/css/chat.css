@@ -22,12 +22,14 @@
 
 .message-user {
     color: green;
+    font-weight: bold;
     width: fit-content;
     border: 1px solid gray;
     padding: 10px;
     border-radius: 5px;
     margin-left: auto;
     font-size: 20px;
+    background-color: rgb(224, 225, 227);
 }
 
 .message-bot {
@@ -94,16 +96,15 @@ button.chat-submit {
     line-height: 0;
     overflow: visible;
     cursor: pointer; */
-    background: linear-gradient(90deg, rgba(9, 214, 156, 1) 0%, rgba(12, 180, 213, 1) 100%);
+    background: rgba(9, 214, 156, 1);
     font-size: 30px;
+    transition: all 0.2s;
 }
 
 button.chat-submit:hover {
-    background: inear-gradient(90deg, rgb(30, 175, 4) 0%, rgb(12, 12, 213) 100%);
-    ;
+    background: green;
 }
 
-img.submit-image {
-    /* object-fit: cover; */
-    /* width: auto; */
+button.chat-submit:active {
+    scale: 1.2;
 }

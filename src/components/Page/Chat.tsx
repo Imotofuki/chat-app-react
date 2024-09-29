@@ -89,7 +89,7 @@ const ChatPage = () => {
                             onKeyDown={(e) => e.key === 'Enter' && sendMessage()}
                             required placeholder="チャットを入力"
                         />
-                        <button className='chat-submit' onClick={sendMessage}>☞</button>
+                        <button className='chat-submit' onClick={sendMessage}>👌</button>
                     </div>
                     <div className="bottom"></div>
                 </div>
